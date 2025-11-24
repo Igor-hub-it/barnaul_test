@@ -48,7 +48,7 @@ const props = defineProps<{
 const emit = defineEmits<{ (e: 'toggle'): void }>()
 
 const devices = computed(() => {
-  // fallback на случай если из стора пришёл пустой массив
+  // проверка на случай если пришёл пустой массив
   return props.devices ?? props.group.devices ?? []
 })
 </script>

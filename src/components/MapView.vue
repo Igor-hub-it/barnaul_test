@@ -20,7 +20,7 @@
       v-if="showEmptyState"
       class="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-white/80 text-center text-sm font-semibold text-indigo-600"
     >
-      Выберите устройство, чтобы увидеть его на карте
+      Выберите устройство, чтобы увидеть  на карте
     </div>
   </div>
 </template>
@@ -122,7 +122,6 @@ const createController = (ymaps: any, container: HTMLElement): MapController => 
         )
         objects.add(marker)
       })
-      // чуть кривовато, но работает ¯\_(ツ)_/¯
       setViewport(ordered)
     },
     destroy() {

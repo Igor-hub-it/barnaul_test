@@ -250,7 +250,7 @@ export const useDeviceStore = defineStore('devices', {
         collapsedDevices: this.collapsedDevices,
         selections: this.selections,
       }
-      // прячем всё в localStorage, ничего хитрого
+      // прячем всё в localStorage
       persistState(payload)
     },
   },

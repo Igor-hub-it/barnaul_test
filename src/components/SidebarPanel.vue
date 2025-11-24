@@ -96,7 +96,6 @@ const currentMode = computed(() => deviceStore.mode)
 const isGroupCollapsed = (id: string) => deviceStore.isGroupCollapsed(id)
 const toggleGroup = (id: string) => deviceStore.toggleGroupCollapse(id)
 const setMode = (mode: 'online' | 'archive') => {
-  // чуть лениво но работает
   deviceStore.toggleMode(mode)
 }
 

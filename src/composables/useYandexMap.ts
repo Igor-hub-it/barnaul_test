@@ -34,7 +34,6 @@ export const useYandexMapLoader = () => {
     script.src = `${API_URL}&apikey=${API_KEY}`
     script.async = true
     script.onload = () => {
-      // да, сначала грузим скрипт, потом ждём ready
       window.ymaps.ready(() => resolve(window.ymaps))
     }
     script.onerror = (error) =>

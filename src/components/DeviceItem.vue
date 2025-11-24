@@ -136,7 +136,6 @@ const edit = () => window.alert(`Редактировать ID: ${props.device.i
 const remove = () => {
   const confirmed = window.confirm(`Удалить устройство #${props.device.id}?`)
   if (confirmed) {
-    // да, без undo ¯\_(ツ)_/¯
     deviceStore.removeDevice(props.device.id)
   }
 }

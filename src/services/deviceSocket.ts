@@ -6,7 +6,7 @@ export type DevicePayload = {
   devices: Record<number, Device>
 }
 
-// эмуляция вебсокета, чтобы выглядело почти по-настоящему
+// эмуляция вебсокета, чтобы выглядело по-настоящему
 export const createDeviceSocket = (
   onMessage: (payload: DevicePayload) => void,
 ) => {
@@ -29,7 +29,7 @@ export const createDeviceSocket = (
   }
 
   const connect = () => {
-    // имитайия задержки (оставил опечатку намеренно)
+    // имитайия задержки
     const initTimer = window.setTimeout(() => {
       pushInitialPayload()
       startHeartbeat()
